@@ -37,3 +37,7 @@ form{
 .two{
     height:5vh;
 }
+.login-btn{
+    transform: translate(-220px,140px);
+    height:20px;
+}
