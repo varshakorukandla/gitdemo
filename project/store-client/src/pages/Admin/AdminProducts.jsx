@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import AdminPageHeader from '../../components/Admin/AdminPageHeader'
 import { Loader2, Pencil, Plus, Trash, TriangleAlert, X } from 'lucide-react'
-import { getProducts, addProduct, deleteProduct, editProduct } from '../../api/Api'
+import { getProducts, addProduct, deleteProduct, editProduct } from '../../api/api'
 import { toast } from 'sonner'
 
 const AdminProducts = () => {
@@ -53,9 +53,9 @@ const AdminProducts = () => {
 
   }
   const editHelper = (product) => {
+    console.log(product)
     setCurrentProduct(product)
     setShowEdit(true)
-
   }
   const handleEdit = async (e) => {
     e.preventDefault()
